@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <title>Document</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/about.css" rel="stylesheet" type="text/css">
+    </link>
+</head>
+
+<body>
+
+    <header id="header_wrapper">
+        <div class="container">
+            <div class="header_box">
+                <div class="logo"><a href="#"><img src="img/logo3-removebg-preview (1).png" alt="logo"></a></div>
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span
+                                class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="main-nav" class="collapse navbar-collapse navStyle">
+                        <ul class="nav navbar-nav" id="mainNav">
+                            <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
+                            <li><a href="#posts" class="scroll-link">Latest News</a></li>
+                            <li><a href="#events" class="scroll-link">Events</a></li>
+                            <li><a href="#videos" class="scroll-link">Videos</a></li>
+                            <li><a href="#articles" class="scroll-link">Healthy Habits</a></li>
+                            <li><a href="#recipies" class="scroll-link">Recipies</a></li>
+                            <li><a href="#exercises" class="scroll-link">Exercises</a></li>
+                            <li><a href="#about" class="scroll-link">About</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="posts">
+        <!--Posts-->
+        <div class="inner_wrapper posts-container fadeInLeft animated wow">
+            <div class="container">
+                <h2>What is Vitality?</h2>
+                <h6> Our mission at Vitality is to create a world free of heart disease. Vitality is an App developed to address one of the world most pressing issue’s: heart disease.
+                    Vitality builds stronger and informed communities by providing an interface were users can register
+                    for upcoming group fitness activities, view interactive videos and locate healthier food choices.
+                </h6>
+                <h2></h2>
+                <div class="inner_section">
+                    <div class="row">
+                        <div class="col-lg-12 about-us">
+                            <div class="row">
+                                <div class="col-md-6"> <img class="img-responsive" src="img/pic1.png" align=""> </div>
+                                <!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <h3>What Does Vitality Provide?</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida
+                                        tortor orci ipsum gravida tortor. Lorem ipsum dolor sit amet, tortor orci ipsum
+                                        gravida tortor. Lorem ipsum dolor sit amet, conseconsectetur.
+                                    </p>
+
+                                    <ul class="about-us-list">
+                                        <li class="points">Consectetur Morbi sagittis, sem quisci ipsum gravida tortor
+                                        </li>
+                                        <li class="points">Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida
+                                        </li>
+                                        <li class="points">Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem
+                                            quisci gravida </li>
+                                        <li class="points">Sagittis, sem quis lacinia faucibus, orci ipsum gravida </li>
+                                        <li class="points">Ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci
+                                        </li>
+                                    </ul><!-- /.about-us-list -->
+
+                                </div><!-- /.col-md-6 -->
+
+                            </div><!-- /.row -->
+                        </div><!-- /.col-lg-12 -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+        <div>
+            <p id="intro">Calculate your BMI (body mass index) by using the form below. Enter your weight and height and
+                click the Calculate button to display your BMI result.</p>
+            <form action="none" method="post" name="bmiform">
+                <fieldset>
+                    <legend>Height and Weight</legend>
+                    <label for="pounds">Weight (pounds):</label>
+                    <input type="text" name="pounds" id="pounds">
+                    <br>
+                    <label for="inches">Height (inches):</label>
+                    <input type="text" name="inches" id="inches">
+                    <br>
+                    <button type="button" name="calculate" value="Calculate your BMI" onclick="calcBMI()">Calculate your
+                        BMI</button>
+                </fieldset>
+                <fieldset>
+                    <legend>BMI</legend>
+                    <label for="bmi" id="bmi_label">Your calculated BMI is:</label>
+                    <input type="text" name="bmi" id="bmi" readonly="readonly">
+                </fieldset>
+            </form>
+            <img src="img/BMI.jpg">
+        </div>
+<script src="js/about.js"></script>
+</body>
+
+</html>
